@@ -5,6 +5,9 @@ import Hero from '../../Pages/Hero';
 import About from '../../Pages/About';
 import Resume from '../../Pages/Resume';
 import Achievements from '../../Pages/Achievements';
+import Projects from '../../../Projects';
+import Blogs from '../../Pages/Blogs';
+import Contact from '../../Pages/Contact';
 
 const Home = () => {
     return (
@@ -17,6 +20,9 @@ const Home = () => {
                 <About></About>
                 <Resume></Resume>
                 <Achievements></Achievements>
+                <Projects></Projects>
+                <Blogs></Blogs>
+                <Contact></Contact>
             </div>
         </div>
     );
