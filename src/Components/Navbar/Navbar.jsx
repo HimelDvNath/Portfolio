@@ -28,8 +28,8 @@ const Navbar = () => {
                 <NavLink to='/'className="hover:bg-base-100 p-3 rounded-xl">Home</NavLink>
                 <NavLink to='/'className="hover:bg-base-100 p-3 rounded-xl">About</NavLink>
                 <NavLink to='/'className="hover:bg-base-100 p-3 rounded-xl">Resume</NavLink>
-                {/* <NavLink to='/'className="hover:bg-base-100 p-3 rounded-xl">Achievements</NavLink>
-                <NavLink to='/'className="hover:bg-base-100 p-3 rounded-xl">Project</NavLink>
+                <NavLink to='/'className="hover:bg-base-100 p-3 rounded-xl">Achievements</NavLink>
+                {/* <NavLink to='/'className="hover:bg-base-100 p-3 rounded-xl">Project</NavLink>
                 <NavLink to='/'className="hover:bg-base-100 p-3 rounded-xl">Blogs</NavLink>
                 <NavLink to='/'className="hover:bg-base-100 p-3 rounded-xl">Contact</NavLink> */}
             </div>

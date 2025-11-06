@@ -4,6 +4,7 @@ import { Outlet } from 'react-router';
 import Hero from '../../Pages/Hero';
 import About from '../../Pages/About';
 import Resume from '../../Pages/Resume';
+import Achievements from '../../Pages/Achievements';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
                 <Hero></Hero>
                 <About></About>
                 <Resume></Resume>
+                <Achievements></Achievements>
             </div>
         </div>
     );
