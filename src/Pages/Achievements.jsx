@@ -63,7 +63,7 @@ const Achievements = () => {
                 </h2>
             </div>
 
-            <div className='bg-gray-50 pb-20 grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center'>
+            <div className='bg-gray-50 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-10 justify-items-center'>
                 {/* EDGE Certificate */}
                 <div className='bg-white shadow-lg rounded-2xl p-10 border-l-8 border-orange-500 hover:shadow-2xl transition-all duration-300 max-w-lg card-lg'>
                     <h4 className='text-2xl font-bold text-gray-900 mb-3'>

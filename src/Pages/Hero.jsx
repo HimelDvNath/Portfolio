@@ -1,29 +1,34 @@
 import React from "react";
 import bgImage from "../../src/assets/IMG_5137.png";
+
 const Hero = () => {
     return (
-        <div
-            className='hero h-[100vh]'
-            style={{
-                backgroundImage: `url(${bgImage})`,
-            }}>
-            <div className='hero-overlay'></div>
-            <div className='flex justify-start items-start p-20 '>
-                <div className='w-2/4 '>
-                    <h1 className='text-xl md:text-5xl font-bold mb-4'>
-                        Hi, I’m a Full Stack Developer
-                    </h1>
-                    <p className='text-lg md:text-xl mb-6'>
-                        I’m a Computer Science and Engineering (CSE) graduate
-                        from Gopalganj Science and Technology University (GSTU)
-                        with a passion for building interactive, user-friendly,
-                        responsive, and efficient web applications using the
-                        MERN stack.
-                    </p>
-                    <button className='btn btn-primary'>See Work</button>
-                </div>
+        <section id="home"
+            className="relative h-screen bg-cover bg-center flex items-center"
+            style={{ backgroundImage: `url(${bgImage})` }}
+        >
+            {/* Overlay */}
+            {/* <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
+            <div className='absolute inset-0 hero-overlay'></div>
+
+            {/* Content */}
+            <div className="relative z-10 px-6 sm:px-10 md:px-20 lg:px-32 max-w-3xl">
+                <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
+                    Hi, I’m a <span className="text-orange-400">Full Stack Developer</span>
+                </h1>
+
+                <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 leading-relaxed">
+                    I’m a Computer Science and Engineering (CSE) graduate from
+                    <span className="font-semibold text-orange-300"> Gopalganj Science and Technology University (GSTU)</span>,
+                    passionate about building interactive, user-friendly, and efficient web applications using the
+                    <span className="font-semibold text-orange-300"> MERN stack</span>.
+                </p>
+
+                <button className="btn btn-primary text-sm sm:text-base px-6 py-2 sm:py-3">
+                    See Work
+                </button>
             </div>
-        </div>
+        </section>
     );
 };
 
