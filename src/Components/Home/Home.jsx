@@ -4,7 +4,7 @@ import Hero from "../../Pages/Hero";
 import About from "../../Pages/About";
 import Resume from "../../Pages/Resume";
 import Achievements from "../../Pages/Achievements";
-import Projects from "../../../Projects";
+import Projects from "../../Pages/Projects";
 import Blogs from "../../Pages/Blogs";
 import Contact from "../../Pages/Contact";
 import { FaBars } from "react-icons/fa6";

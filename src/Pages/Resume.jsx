@@ -54,7 +54,6 @@ const Resume = () => {
                         </div>
                     </div>
                     <motion.div
-                        className='mb-12'
                         variants={fadeInUp}
                         custom={0.2}
                         className='space-y-4 mb-5'>
