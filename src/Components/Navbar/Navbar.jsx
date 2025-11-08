@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from "../../assets/IMG_3722.png";
+import profilePic from "../../assets/IMG_3722.jpg";
 import { FaFacebook, FaInstagram } from "react-icons/fa6";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
@@ -51,9 +51,9 @@ const Navbar = ({ setIsOpen }) => {
                     smooth={true}
                     duration={700}
                     spy={true}
-                    activeClass='bg-base-100'
+                    activeClass='bg-gray-500'
                     onClick={() => setIsOpen(false)}
-                    className='cursor-pointer hover:bg-base-100 p-3 rounded-xl'>
+                    className='cursor-pointer hover:bg-gray-500 p-3 rounded-xl'>
                     Home
                 </Link>
                 <Link
@@ -61,9 +61,9 @@ const Navbar = ({ setIsOpen }) => {
                     smooth={true}
                     duration={700}
                     spy={true}
-                    activeClass='bg-base-100'
+                    activeClass='bg-gray-500'
                     onClick={() => setIsOpen(false)}
-                    className='cursor-pointer hover:bg-base-100 p-3 rounded-xl'>
+                    className='cursor-pointer hover:bg-gray-500 p-3 rounded-xl'>
                     About
                 </Link>
                 <Link
@@ -71,9 +71,9 @@ const Navbar = ({ setIsOpen }) => {
                     smooth={true}
                     duration={700}
                     spy={true}
-                    activeClass='bg-base-100'
+                    activeClass='bg-gray-500'
                     onClick={() => setIsOpen(false)}
-                    className='cursor-pointer hover:bg-base-100 p-3 rounded-xl'>
+                    className='cursor-pointer hover:bg-gray-500 p-3 rounded-xl'>
                     Resume
                 </Link>
                 <Link
@@ -81,9 +81,9 @@ const Navbar = ({ setIsOpen }) => {
                     smooth={true}
                     duration={700}
                     spy={true}
-                    activeClass='bg-base-100'
+                    activeClass='bg-gray-500'
                     onClick={() => setIsOpen(false)}
-                    className='cursor-pointer hover:bg-base-100 p-3 rounded-xl'>
+                    className='cursor-pointer hover:bg-gray-500 p-3 rounded-xl'>
                     Achievements
                 </Link>
                 <Link
@@ -91,9 +91,9 @@ const Navbar = ({ setIsOpen }) => {
                     smooth={true}
                     duration={700}
                     spy={true}
-                    activeClass='bg-base-100'
+                    activeClass='bg-gray-500'
                     onClick={() => setIsOpen(false)}
-                    className='cursor-pointer hover:bg-base-100 p-3 rounded-xl'>
+                    className='cursor-pointer hover:bg-gray-500 p-3 rounded-xl'>
                     Projects
                 </Link>
                 <Link
@@ -101,9 +101,9 @@ const Navbar = ({ setIsOpen }) => {
                     smooth={true}
                     duration={700}
                     spy={true}
-                    activeClass='bg-base-100'
+                    activeClass='bg-gray-500'
                     onClick={() => setIsOpen(false)}
-                    className='cursor-pointer hover:bg-base-100 p-3 rounded-xl'>
+                    className='cursor-pointer hover:bg-gray-500 p-3 rounded-xl'>
                     Blogs
                 </Link>
                 <Link
@@ -112,8 +112,8 @@ const Navbar = ({ setIsOpen }) => {
                     duration={700}
                     spy={true}
                     onClick={() => setIsOpen(false)}
-                    activeClass='bg-base-100'
-                    className='cursor-pointer hover:bg-base-100 p-3 rounded-xl'>
+                    activeClass='bg-gray-500'
+                    className='cursor-pointer hover:bg-gray-500 p-3 rounded-xl'>
                     Contact
                 </Link>
             </div>

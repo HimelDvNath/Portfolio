@@ -2,6 +2,12 @@
 @plugin "daisyui";
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
+@plugin "daisyui/theme" {
+    name: "light";
+    default: true;
+    /* --color-base-200: #f3f3f3;
+    --color-base-300: #e7e7e7; */
+}
