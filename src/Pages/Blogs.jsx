@@ -35,7 +35,7 @@ const Blogs = () => {
                 My <span className='text-orange-500'>Blogs</span>
                 <span className='block w-20 h-1 bg-orange-400 mx-auto mt-3 rounded-full'></span>
             </h2>
-            <div className='grid grid-cols-1 lg:grid-cols-2'>
+            <div className='grid grid-cols-1 lg:grid-cols-3'>
                 <div className='card bg-base-100 w-96 shadow-sm'>
                     <figure>
                         <img src={json} alt='json pic' />
