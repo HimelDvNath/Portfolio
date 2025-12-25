@@ -1,5 +1,7 @@
 import React from "react";
 import Shopnity from "../Components/Project/Shopnity";
+import BookTalk from "../Components/Project/BookTalk";
+import VehiclesRental from "../Components/Project/VehiclesRental";
 
 const Projects = () => {
     return (
@@ -8,9 +10,10 @@ const Projects = () => {
                 My <span className='text-orange-500'>Project</span>
                 <span className='block w-20 h-1 bg-orange-400 mx-auto mt-3 rounded-full'></span>
             </h2>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 '>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 justify-items-center'>
                 {<Shopnity />}
-                
+                {<BookTalk/>}
+                {<VehiclesRental/>}
                 </div>
         </div>
     );

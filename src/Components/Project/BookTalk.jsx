@@ -1,47 +1,48 @@
 import React from "react";
-import shopnity from "../../assets/shopnity.png";
+import bookTalk from "../../assets/bookTalk.png";
 
-const Shopnity = () => {
+const BookTalk = () => {
     return (
         <div className='card bg-base-100 image-full overflow-hidden shadow-lg rounded-xl  border-l-5 border-t-3 border-orange-500 hover:shadow-2xl transition-all duration-300 max-w-lg card-lg'>
             <figure>
                 <img
-                    src={shopnity}
-                    alt='Shopnity homepage'
+                    src={bookTalk}
+                    alt='BookTalk homepage'
                     className='object-cover'
                 />
             </figure>
 
             <div className='card-body text-white'>
                 <h2 className='card-title text-xl flex justify-center items-center pt-5 mb-3 font-bold'>
-                    Shopnity E-commerce Website
+                    Book-Talk is a real-time book discussion platform designed
+                    for book lovers.
                 </h2>
 
                 <p className='text-sm leading-relaxed text-justify opacity-90'>
-                    Shopnity is a full-stack e-commerce platform built with
-                    React, Tailwind, Node.js, Express, and MongoDB. It features
-                    secure authentication, product browsing, wishlist & cart
-                    management, order tracking, and a powerful admin dashboard
-                    for full control of products, categories, and orders.
+                    Users can discuss books, post comments, reply to comments
+                    (nested comments), and receive real-time notifications — all
+                    without refreshing the page. This project focuses on
+                    real-time interaction using React and Socket.IO, providing a
+                    smooth and modern user experience.
                 </p>
 
                 <div className='card-actions justify-end mt-2'>
                     <a
-                        href='https://www.linkedin.com/feed/update/urn:li:activity:7399864012382879744/'
+                        href='https://www.linkedin.com/feed/update/urn:li:ugcPost:7409651411606679552/'
                         target='_blank'
                         rel='noopener noreferrer'
                         className='btn btn-primary btn-sm px-4'>
                         More Details
                     </a>
                     <a
-                        href='https://github.com/HimelDvNath/Shopnity-E-Commerce-Website-Server'
+                        href='https://github.com/HimelDvNath/Book-Talk?tab=readme-ov-file'
                         target='_blank'
                         rel='noopener noreferrer'
                         className='btn btn-primary btn-sm px-4'>
                         Git Repo
                     </a>
                     <a
-                        href='https://shopnity-e-commerce-website.web.app/'
+                        href='https://booktalk-1cf94.web.app/'
                         target='_blank'
                         rel='noopener noreferrer'
                         className='btn btn-primary btn-sm px-4'>
@@ -53,4 +54,4 @@ const Shopnity = () => {
     );
 };
 
-export default Shopnity;
+export default BookTalk;
