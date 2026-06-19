@@ -1,75 +1,90 @@
 import React from "react";
-import bgImage from "../../src/assets/IMG_5137.jpg";
-import cv from '../../src/assets/CV.pdf'
+import bgImage from "../assets/IMG_5137.JPG";
+import cv from '../assets/CV.pdf';
 import { Link } from "react-scroll";
+
+const techStack = ["React.js", "Next.js", "Node.js", "TypeScript", "PostgreSQL"];
 
 const Hero = () => {
     return (
         <section
             id='home'
-            className='relative w-full h-[70vh] md:h-[80vh] lg:h-[100vh] flex items-center justify-start overflow-hidden'
+            className='relative w-full h-[70vh] md:h-[80vh] lg:h-screen flex items-center justify-start overflow-hidden'
             aria-label='Hero Section'>
-            {/* Background Image with Loading State */}
-            <div className='absolute inset-0 w-full h-full bg-gray-800'>
+
+            {/* Background */}
+            <div className='absolute inset-0 w-full h-full bg-gray-900'>
                 <img
                     src={bgImage}
-                    alt='Professional workspace with developer setup'
-                    className='w-full h-full object-cover object-center'
+                    alt='Developer workspace'
+                    className='w-full h-full object-cover object-center opacity-50'
                     loading='eager'
-                    onError={(e) => {
-                        e.target.style.display = "none";
-                    }}
+                    onError={(e) => { e.target.style.display = "none"; }}
                 />
             </div>
+            <div className='absolute inset-0 bg-linear-to-r from-black/90 via-black/60 to-black/20 z-0' />
 
-            {/* Gradient overlay for better text readability */}
-            <div
-                className='absolute inset-0 bg-gradient-to-r from-black/70 to-black/40 z-0'
-                aria-hidden='true'></div>
-
-            <div className='relative z-10 px-6 sm:px-10 md:px-20 lg:px-32 max-w-3xl space-x-2'>
-                <h1 className='text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight'>
-                    Hi, I'm a{" "}
-                    <span className='text-violet-400 bg-gradient-to-r from-violet-400 to-purple-500 bg-clip-text text-transparent'>
-                        Full Stack Developer
-                    </span>
-                </h1>
-
-                <p className='text-base sm:text-lg md:text-xl text-gray-200 mb-8 leading-relaxed max-w-2xl'>
-                    I'm a Computer Science and Engineering (CSE) graduate from
-                    <span className='font-semibold text-orange-300'>
-                        {" "}
-                        Gopalganj Science and Technology University (GSTU)
-                    </span>
-                    , passionate about building interactive, user-friendly, and
-                    efficient web applications using the
-                    <span className='font-semibold text-orange-300'>
-                        {" "}
-                        MERN stack
-                    </span>
-                    .
+            {/* Content */}
+            <div className='relative z-10 px-6 sm:px-10 md:px-20 lg:px-32 max-w-3xl'>
+                <p className='text-orange-400 text-xs sm:text-sm font-semibold tracking-widest uppercase mb-3'>
+                    Welcome to my portfolio
                 </p>
 
-                <Link
-                    to='projects'
-                    smooth={true}
-                    duration={700}
-                    spy={true}
-                    offset={-70} // Adjusts scroll position to account for fixed headers
-                    className='inline-block'>
-                    <button
-                        className='bg-violet-600 hover:bg-violet-700 text-white font-medium text-sm sm:text-base px-6 py-3 sm:py-4 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-50'
-                        aria-label='View my projects'>
-                        See My Work
-                    </button>
-                </Link>
-                <a
-                    href={cv}
-                    download
-                    className='bg-violet-600 hover:bg-violet-700 text-white font-medium text-sm sm:text-base px-6 py-3 sm:py-4 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-50'
-                    aria-label='Download Resume'>
-                    Download Resume
-                </a>
+                <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-2 leading-tight'>
+                    Hi, I'm{" "}
+                    <span className='text-orange-400'>Himel Devnath</span>
+                </h1>
+
+                <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-300 mb-5'>
+                    Software Engineer{" "}
+                    
+                </h2>
+
+                <p className='text-sm sm:text-base text-gray-300/90 mb-6 leading-relaxed max-w-xl'>
+                    Software Engineer at{" "}
+                    <span className='font-semibold text-orange-300'>Spectrum Software &amp; Consulting (Pvt.) Ltd</span>
+                    , building enterprise web applications for banking and financial services clients.
+                    CSE graduate from{" "}
+                    <span className='font-semibold text-orange-300'>GSTU</span>.
+                </p>
+
+                {/* Tech Tags */}
+                <div className='flex flex-wrap gap-2 mb-8'>
+                    {techStack.map((tech) => (
+                        <span
+                            key={tech}
+                            className='text-xs font-medium text-gray-300 bg-white/10 border border-white/20 px-3 py-1 rounded-full backdrop-blur-sm'>
+                            {tech}
+                        </span>
+                    ))}
+                </div>
+
+                {/* CTA Buttons */}
+                <div className='flex flex-wrap gap-4'>
+                    <Link
+                        to='projects'
+                        smooth={true}
+                        duration={700}
+                        spy={true}
+                        offset={-70}
+                        className='inline-block'>
+                        <button className='bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm sm:text-base px-7 py-3 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/30'>
+                            View Projects
+                        </button>
+                    </Link>
+                    <a
+                        href={cv}
+                        download
+                        className='inline-block border border-white/30 hover:border-orange-400 text-white hover:text-orange-400 font-semibold text-sm sm:text-base px-7 py-3 rounded-lg transition-all duration-300 hover:scale-105'>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+
+            {/* Scroll indicator */}
+            <div className='absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 z-10 opacity-60'>
+                <span className='text-white text-xs tracking-widest uppercase'>Scroll</span>
+                <div className='w-px h-8 bg-linear-to-b from-orange-400 to-transparent' />
             </div>
         </section>
     );

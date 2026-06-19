@@ -205,6 +205,46 @@ const Achievements = () => {
                 </div>
             </div>
 
+            {/* Competitive Programming Section */}
+            <div className='bg-gray-50 pb-20 px-4'>
+                <div className='max-w-4xl mx-auto'>
+                    <h3 className='text-2xl font-bold text-gray-800 mb-6 text-center'>
+                        ⌨️ Competitive Programming
+                    </h3>
+                    <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mb-6'>
+                        {[
+                            { label: "Codeforces",  value: "1196",  sub: "Rating",         color: "blue",   href: "https://codeforces.com/profile/Himel05" },
+                            { label: "LeetCode",    value: "70+",   sub: "Problems",       color: "yellow", href: "https://leetcode.com/u/Himelcse005/" },
+                            { label: "CodeChef",    value: "2★",    sub: "Rating",         color: "orange", href: "https://www.codechef.com/users/himelcse005" },
+                            { label: "AtCoder",     value: "353",   sub: "Rating",         color: "gray",   href: "https://atcoder.jp/users/Himelcse005" },
+                        ].map(({ label, value, sub, color, href }) => (
+                            <a
+                                key={label}
+                                href={href}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className={`bg-white shadow-lg rounded-xl p-5 text-center border-t-4 border-${color}-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-300`}>
+                                <div className={`text-2xl font-extrabold text-${color}-600 mb-1`}>{value}</div>
+                                <div className='text-sm font-semibold text-gray-800'>{label}</div>
+                                <div className='text-xs text-gray-400 mt-0.5'>{sub}</div>
+                            </a>
+                        ))}
+                    </div>
+                    <div className='bg-white shadow-lg rounded-xl p-6 border-l-8 border-orange-500 flex flex-col md:flex-row items-center justify-between gap-4'>
+                        <div className='text-center md:text-left'>
+                            <div className='text-3xl font-extrabold text-orange-500 mb-1'>750+</div>
+                            <div className='text-gray-700 font-medium'>Algorithmic problems solved</div>
+                            <div className='text-gray-400 text-sm'>across Codeforces, CodeChef &amp; AtCoder</div>
+                        </div>
+                        <div className='text-center md:text-right'>
+                            <div className='text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1'>ICPC Achievement</div>
+                            <div className='text-gray-900 font-bold'>Asia Dhaka Regional Onsite 2020</div>
+                            <div className='text-orange-500 font-extrabold text-lg'>Rank 101</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {/* Modal */}
             {modalOpen && (
                 <div className='fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50'>

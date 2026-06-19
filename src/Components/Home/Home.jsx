@@ -24,7 +24,7 @@ const Home = () => {
             </div>
 
             <div
-                className={`fixed top-0 left-0 h-full w-64 bg-[#4d5054] text-neutral-content transform ${
+                className={`fixed top-0 left-0 h-full w-64 bg-[#1a1d23] text-neutral-content transform ${
                     isOpen ? "translate-x-0" : "-translate-x-full"
                 } transition-transform duration-300 ease-in-out lg:translate-x-0 lg:col-span-2 lg:block z-40`}>
                 <Navbar setIsOpen={setIsOpen} />
@@ -35,7 +35,7 @@ const Home = () => {
                     onClick={() => setIsOpen(false)}
                     className='fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden'></div>
             )}
-            <div className='lg:ml-[16.5rem] bg-white transition-all duration-300'>
+            <div className='lg:ml-66 bg-white transition-all duration-300'>
                 <section id='home'>
                     <Hero />
                 </section>
