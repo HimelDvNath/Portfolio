@@ -74,7 +74,8 @@ const Hero = () => {
                     </Link>
                     <a
                         href="/CV.pdf"
-                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className='inline-block border border-white/30 hover:border-orange-400 text-white hover:text-orange-400 font-semibold text-sm sm:text-base px-7 py-3 rounded-lg transition-all duration-300 hover:scale-105'>
                         Download CV
                     </a>
