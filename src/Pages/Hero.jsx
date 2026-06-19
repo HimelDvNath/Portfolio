@@ -1,6 +1,6 @@
 import React from "react";
 import bgImage from "../assets/IMG_5137.JPG";
-import cv from '../assets/CV.pdf';
+
 import { Link } from "react-scroll";
 
 const techStack = ["React.js", "Next.js", "Node.js", "TypeScript", "PostgreSQL"];
@@ -73,7 +73,7 @@ const Hero = () => {
                         </button>
                     </Link>
                     <a
-                        href={cv}
+                        href="/CV.pdf"
                         download
                         className='inline-block border border-white/30 hover:border-orange-400 text-white hover:text-orange-400 font-semibold text-sm sm:text-base px-7 py-3 rounded-lg transition-all duration-300 hover:scale-105'>
                         Download CV
